@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+h1 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 2.2rem;
+}
+body {
+    font-family: sans-serif;
+}
+.game {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    height: 400px;
+    margin: 70px auto;
+}
+.game .buttons {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+
+}
+.game .buttons button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 5rem;
+}
+.game .rest {
+    background-color: black;
+    color: white;
+    border: none;
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.game .winner {
+    width:100%;
+    height: 100%;
+    padding: 10px 20px;
+    border: white solid;
+    border-width: 0 5px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 4.5rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+.negative-index {
+    z-index: -1;
+}
